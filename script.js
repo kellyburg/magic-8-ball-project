@@ -9,6 +9,7 @@ $(document).ready(function(){
         var answer = magicEightBall.listOfAnswers[randomNumber];
     };
 var askQuestion = function(){	
+    $("#8ball").effect("shake");
 	$("#answer").hide();
 	$("#8ball").attr("src","https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png");
 setTimeout( function(){
