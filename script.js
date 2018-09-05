@@ -4,7 +4,7 @@ $(document).ready(function(){
     magicEightBall.shakeEightBall= function (question){
         var randomNumber=Math.floor(Math.random()*magicEightBall.listOfAnswers.length);
         var answer = magicEightBall.listOfAnswers[randomNumber];
-        console.log(answer);
+$("#answer").text(answer);
     };
 var askQuestion = function(){
 	var question=prompt("Ask a Yes/No Question");
