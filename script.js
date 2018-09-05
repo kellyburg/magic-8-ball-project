@@ -7,6 +7,7 @@ $(document).ready(function(){
 		
         var randomNumber=Math.floor(Math.random()*magicEightBall.listOfAnswers.length);
         var answer = magicEightBall.listOfAnswers[randomNumber];
+        $("#answer").text(answer);
     };
 var askQuestion = function(){	
     $("#8ball").effect("shake");
