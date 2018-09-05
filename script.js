@@ -6,4 +6,9 @@ $(document).ready(function(){
         var answer = magicEightBall.listOfAnswers[randomNumber];
         console.log(answer);
     };
+var askQuestion = function(){
+	var question=prompt("Ask a Yes/No Question");
+	magicEightBall.shakeEightBall(question);
+};
+	$("#questionButton").click(askQuestion);
     });
